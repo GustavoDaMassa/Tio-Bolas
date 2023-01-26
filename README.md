@@ -23,5 +23,5 @@ Descrição: Sistema de gerenciamento de pedidos, estoque e dados de clientes, p
 
 <p>Planejamos fazer duas interfaces, uma para a administração do sistema de produtos e outra para o gerenciamento de pedidos. Temos em mente algumas funcionalidades do programa. Na interface do gerenciamento do sistema pensamos em fazer funções que computem, apresentem e permita ao administrador alterar informações sobre o produtos, como receitas e quantidades. Já na interface do funcionário queremos que ela permita ele registrar, atualizar, cancelar e concluir pedidos.
    
-   Até o momento, planejamos implementar uma fila (FIFO) para o gerenciamento de pedidos, e ao realizar as funções (registrar, atualizar, cancelar e concluir pedidos) automaticamente guardar em arquivos as informações dos produtos e clientes, para que essas informações sejam usadas em outras funções na interface do administrador.
+Planejamos implementar uma fila (FIFO) para o gerenciamento de pedidos, e ao realizar as funções (registrar, atualizar, cancelar e concluir pedidos) automaticamente guardar em arquivos as informações dos produtos e clientes, para que essas informações sejam usadas em outras funções na interface do administrador.
    
