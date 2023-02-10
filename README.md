@@ -48,3 +48,9 @@ apresentam. As interfaces são predominantemente implementada com loops while co
 ser globais pois facilitaria a implementação, essas variáveis são: os ponteiros para arquivos de cardapio e clientes, a fila de pedidos e o vetor do cardápio. Porém ao fazer isso obtivemos vários erros e dificuldades relacionados a dupla definição de variáveis e funções, mas foi resolvido depois de muito estudo e pesquisa ao usar as funcionalidades "extern", "#ifndef", "#define" e "#endif".</p>
 
 <p>Foi preciso também estudo para relembrar o assunto de arquivos para saber como abrir no modo que precisávamos, como mudar o tamanho de um arquivo, como copiar informações, entre outros.</p>
+
+<p>Apesar da evolução o programa ainda tem muitos problemas e funções não implementadas, mas o código até o momento roda sem erros de compilação e já é possível navegar por um protótipo da interface.</p>
+
+<p>As instruções de compilação são:</p>
+
+<p>gcc *.h *.c -o prog</p>
