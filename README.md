@@ -28,3 +28,23 @@ Descrição: Sistema de gerenciamento de pedidos, estoque e dados de clientes, p
    
 Planejamos implementar uma fila (FIFO) para o gerenciamento de pedidos, e ao realizar as funções (registrar, atualizar, cancelar e concluir pedidos) automaticamente guardar em arquivos as informações dos produtos e clientes, para que essas informações sejam usadas em outras funções na interface do administrador.</p>
    
+
+
+Submissão W2 - Modelagem e descrição metodológica.
+
+<p>No projeto procuramos proporcionar para o usuário um sistema simples onde ele pode facilmente navegar de acordo com seu objetivo e de maneira gradativa.</p>
+
+<p>É disponibilizado duas opções de perfis logo no início do programa, a interface do gerente e a interface do atendente:</p>
+
+<p>-Onde a do gerente possui acesso administrativo as informações do estabelecimento:  O estoque , que penejamos atualizar de acordo com a venda e compra  dos produtos;  As finanças, que informará  o lucro que o estabelecimento teve em um certo dia ou mês, auxiliando na receita da empresa;  A lista de clientes que possuem cadastro, onde será registrado dados como a recorrência de tal pessoa na loja e até mesmo data de aniversario para possibilitar promoções e descontos; E o histórico de vendas, registrando as atividades da empresa, e que  assim como as demais funcionalidades utilizam como base os conceitos de listas para alocar e editar os dados e as armazenas em arquivos.</p>
+<p>-A interface do atendente, será onde os pedidos serão realizados e o cardápio será apresentado com os respectivos preços, o gerente poderá remover e adicionar itens no cardápio de acordo com o estoque, ao finalizar o pedido o valor total da compra será a calculado e apresentado. O atendente pode acessar também os pedidos em andamento para ter um controle maior.</p> 
+<p>o programa oferece a todo momento a opção de cancela-lo  e reinicia-lo .</p>
+
+<p>Começamos a implementação fazendo um menu com opções e já encontramos dificuldades e dúvidas nas funções que fariam sentido serem apresentadas
+para o usuário, após discussão com o grupo decidimos quais funções fazem sentido para o atendente e quais fazem sentido para o gerente e de que maneira se
+apresentam. As interfaces são predominantemente implementada com loops while com quebras quando ocorre o cancelamento por parte do usuário.</p>
+
+<p>Foi visto que algumas variáveis e arquivos eram essenciais e seriam usadas em todos os arquivos, portanto foi decidido que essas variáveis deveriam
+ser globais pois facilitaria a implementação, essas variáveis são: os ponteiros para arquivos de cardapio e clientes, a fila de pedidos e o vetor do cardápio. Porém ao fazer isso obtivemos vários erros e dificuldades relacionados a dupla definição de variáveis e funções, mas foi resolvido depois de muito estudo e pesquisa ao usar as funcionalidades "extern", "#ifndef", "#define" e "#endif".</p>
+
+<p>Foi preciso também estudo para relembrar o assunto de arquivos para saber como abrir no modo que precisávamos, como mudar o tamanho de um arquivo, como copiar informações, entre outros.</p>
