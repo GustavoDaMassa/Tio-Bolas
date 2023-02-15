@@ -1,4 +1,5 @@
 #include "produto.h"
+#include "cliente.h"
 #include "pedido.h"
 #include "arquivos.h"
 #include <stdlib.h>
@@ -24,9 +25,13 @@ void end_program() {
         }
 
     }
-    if(c != NULL) { // Caso c esteja alocado
-        if(c->prods != NULL) free(c->prods); // Caso c->prods esteja alocado
-        free(c);
+    if(car != NULL) { // Caso car esteja alocado
+        if(car->prods != NULL) free(car->prods); // Caso c->prods esteja alocado
+        free(car);
+    }
+    if(cli != NULL) { // Caso cli esteja alocado
+        if(cli->clis != NULL) free(cli->clis); // Caso c->prods esteja alocado
+        free(cli);
     }
 
     fechar_arquivos();
