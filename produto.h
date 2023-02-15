@@ -26,7 +26,7 @@ struct card{
 };
 
 
-extern Card * c;
+extern Card * car;
 
 /**
  * @brief Lê o arquivo cardapio.bin e coloca a variável de quantidade e todos os produtos dentro da variável global 'c' do tipo ponteiro pra Cardapio
@@ -59,13 +59,17 @@ void print_cardapio();
 /**
  * @brief Função que adiciona um produto no ponteiro pra Cardapio 'c'
  * 
+ * @return 0 Se algum produto foi adicionado, 1 se o usuário desistiu.
  */
-void add_produto();
+int add_produto();
 
 /**
  * @brief Função que remove um produto do ponteiro pra Cardapio 'c'
  * 
+ * @return 0 Se algum produto foi removido, 1 se o usuário desistiu.
  */
-void rem_produto();
+int rem_produto();
+
+void teste_cardapio();
 
 #endif
