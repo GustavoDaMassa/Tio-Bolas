@@ -6,7 +6,7 @@
 
 Prof. Dr. Aldo André Díaz Salazar (aldo.diaz@ufg.br)
 
-## Equipe {insert group name here}
+## Equipe 
 
 Integrantes:
 
@@ -18,7 +18,7 @@ Integrantes:
 
 ## PROJETO: Sistema de gerenciamento de pedidos, estoque e clientes usando Estrutura de Dados  
 
-Submissão W1 - Introdução, revisão bibliográfica e fundamentação teórica  
+Submissão W1 -Introdução, revisão bibliográfica e fundamentação teórica  
   
 Descrição: Sistema de gerenciamento de pedidos, estoque e dados de clientes, para um estabelecimento comercial qualquer, no nosso caso, uma sorveteria.
 	
