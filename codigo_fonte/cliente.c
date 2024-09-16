@@ -352,7 +352,7 @@ void print_clientes() {
     else {
         printf("\033[34m  -- Clientes cadastrados -- \033[0m\n\n");
         for(i = 1; i <= cli->qtd; i++) { // Printando cada cliente
-            printf("%d. %s %s %d\n", cli->clis[i-1].id, cli->clis[i-1].nome, cli->clis[i-1].email, cli->clis[i-1].qnt_compras);
+            printf("%d. %s %s %d/%d/%d quantidade de compras:%d\n", cli->clis[i-1].id, cli->clis[i-1].nome, cli->clis[i-1].email, cli->clis[i-1].nasc.dia, cli->clis[i-1].nasc.mes, cli->clis[i-1].nasc.ano ,cli->clis[i-1].qnt_compras);
         }
     }
 }
