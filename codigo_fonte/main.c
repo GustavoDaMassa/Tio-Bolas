@@ -1,5 +1,6 @@
 #include "end.h"
 #include "arquivos.h"
+#include "cliente.h"
 #include "pedido.h"
 #include "produto.h"
 #include "menu.h"
@@ -32,7 +33,7 @@ int main(){
 
     while(1) {
         num = -1;
-        printf("\033[32m\n\nBem vinde a sorveteria Tio Bolas!\033[0m\n\n");
+        printf("\033[32m\n\nBem vindos a sorveteria Tio Bolas!\033[0m\n\n");
         printf("Digite um numero para escolher qual interface deseja acessar:\n\n");
         printf("[1] - Interface do Atendente\n");
         printf("[2] - Interface do Gerente\n");
@@ -84,6 +85,8 @@ int main(){
                 
 
                 if(num == 1) ver_cardapio();
+                else if(num == 2)print_clientes();
+                else if(num == 3)pedidos_andamento();
                 else if(num == 4) break;
                 else if(num == 0) return 0;
                 else printf("\033[31mOpção inválida\033[0m\n");

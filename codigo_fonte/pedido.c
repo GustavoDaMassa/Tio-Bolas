@@ -18,7 +18,7 @@ void inserir_pedido() {
     Pedido * p = NULL;
     Pedido * aux = NULL;
     Cliente * c = NULL;
-    int preco = 0;
+    double preco = 0;
 
     p = (Pedido *) malloc(sizeof(Pedido));
     if(!p) {
@@ -50,6 +50,8 @@ void inserir_pedido() {
         exit(1);
     }
     print_clientes();
+    printf("---------------------------------------------------\n");
+
 
     if(escolher_produtos(p) == 1) {
         free(c);
@@ -287,7 +289,7 @@ int pick_name(char * s) {
 void print_pedido(Pedido * p) {
 
     int i;
-
+    printf("-----------------------------------\n");
     printf("Quantidade de produtos diferentes: %d\n", p->qtd_p);
     printf("Produtos:\n");
     for(i = 0; i < (p->qtd_p); i++) {
@@ -307,6 +309,7 @@ void pedidos_andamento() {
         p = h->ini;
         while(1) {
             if(p == NULL) break;
+            printf("\n");
             printf("%d. ", i);
             print_pedido(p);
             p = p->prox;
