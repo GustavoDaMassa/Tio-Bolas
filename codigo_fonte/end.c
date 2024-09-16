@@ -3,7 +3,7 @@
 #include "pedido.h"
 #include "arquivos.h"
 #include <stdlib.h>
-#include <stdio.h>
+#include <stdio.h>  
 extern FILE * cardapio;
 extern FILE * clientes;
 extern FILE * estoque;
