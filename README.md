@@ -86,3 +86,30 @@ Senha correta!
 
 
 ## como executar
+   Para compilar e executar o programa certifique-se que o *GCC* está instalado.
+
+  
+  - Você pode clonar o repositório para a sua máquina local com o comando:
+    
+    ```
+    git clone https://github.com/GustavoDaMassa/TioBolas.git
+    ```
+    
+  - Compilando:
+   
+    ```
+    gcc main.c arquivos.c cliente.c end.c menu.c pedido.c produto.c -o tiobolas
+    ```
+    
+  - Executando:
+    
+    ```
+    ./tiobolas
+    ```
+
+
+
+
+   
+  
+
